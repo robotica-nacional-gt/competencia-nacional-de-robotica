@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Registro Nacional de Robótica Guatemala</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f9;
+    color: #222;
+}
+
+/* ENCABEZADO */
+
+header {
+    background: #101b35;
+    color: white;
+    padding: 16px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: #1d73d5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+}
+
+.logo-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo-small {
+    font-size: 12px;
+    opacity: .75;
+    margin-top: 3px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    font-size: 14px;
+}
+
+nav span {
+    cursor: default;
+}
+
+
+/* BANNER */
+
+.banner {
+    background: linear-gradient(120deg, #10234d, #155db5);
+    color: white;
+    padding: 55px 8%;
+}
+
+.banner h1 {
+    margin: 0 0 12px;
+    font-size: 35px;
+}
+
+.banner p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+
+/* CONTENIDO */
+
+.container {
+    max-width: 1050px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+
+/* TARJETAS */
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 28px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.08);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #152b55;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.info-box {
+    border: 1px solid #e0e4ea;
+    border-radius: 7px;
+    padding: 15px;
+}
+
+.info-title {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.info-value {
+    font-weight: bold;
+}
+
+
+/* ESTADO */
+
+.estado {
+    display: inline-block;
+    background: #e7f6eb;
+    color: #21853d;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* BOTÓN */
+
+button {
+    width: 100%;
+    margin-top: 25px;
+    background: #1769c2;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #12559e;
+}
+
+
+/* ERRORES */
+
+#errores {
+    display: none;
+    margin-top: 25px;
+}
+
+.error {
+    background: #fff1f1;
+    border-left: 5px solid #d32f2f;
+    color: #9b1c1c;
+    padding: 14px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+
+/* RESULTADO FINAL */
+
+.final {
+    display: none;
+    margin-top: 25px;
+    background: #fff7df;
+    border: 2px solid #e2a500;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+}
+
+.final h2 {
+    color: #c62828;
+    margin: 0;
+    font-size: 30px;
+}
+
+
+/* PIE */
+
+footer {
+    margin-top: 50px;
+    background: #101b35;
+    color: white;
+    padding: 25px 8%;
+    font-size: 13px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+/* MÓVIL */
+
+@media(max-width: 750px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ENCABEZADO -->
+
+<header>
+
+    <div class="logo">
+
+        <div class="logo-icon">
+            🤖
+        </div>
+
+        <div>
+
+            <div class="logo-text">
+                RNRT Guatemala
+            </div>
+
+            <div class="logo-small">
+                Red Nacional de Robótica y Tecnología
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <span>Inicio</span>
+        <span>Competencia</span>
+        <span>Categorías</span>
+        <span>Contacto</span>
+
+    </nav>
+
+</header>
+
+
+
+<!-- BANNER -->
+
+<section class="banner">
+
+    <h1>
+        Campeonato Nacional de Robótica
+    </h1>
+
+    <p>
+        Guatemala 2026
+    </p>
+
+    <p>
+        Innovación • Tecnología • Robótica
+    </p>
+
+</section>
+
+
+
+<!-- CONTENIDO -->
+
+<div class="container">
+
+<div class="grid">
+
+
+<!-- INFORMACIÓN PRINCIPAL -->
+
+<div class="card">
+
+    <h2>
+        Confirmación de participación
+    </h2>
+
+    <p>
+        Se ha registrado una actualización en la información
+        correspondiente a tu equipo participante.
+    </p>
+
+    <p>
+        Para continuar con el proceso de participación,
+        confirma la información de tu inscripción.
+    </p>
+
+
+    <div class="info">
+
+
+        <div class="info-box">
+
+            <div class="info-title">
+                EVENTO
+            </div>
+
+            <div class="info-value">
+                Campeonato Nacional de Robótica 2026
+            </div>
+
+        </div>
+
+
+
+        <div class="info-box">
+
+            <div class="info-title">
+                PAÍS
+            </div>
+
+            <div class="info-value">
+                Guatemala
+            </div>
+
+        </div>
+
+
+
+        <div class="info-box">
+
+            <div class="info-title">
+                CATEGORÍA
+            </div>
+
+            <div class="info-value">
+                Robótica Educativa
+            </div>
+
+        </div>
+
+
+
+        <div class="info-box">
+
+            <div class="info-title">
+                MODALIDAD
+            </div>
+
+            <div class="info-value">
+                Competencia presencial
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <button onclick="confirmar()">
+        Confirmar participación
+    </button>
+
+
+    <!-- ERRORES -->
+
+    <div id="errores">
+
+        <div class="error">
+            ⚠ Error 403 — Verificación de participación requerida.
+        </div>
+
+    </div>
+
+
+    <!-- MENSAJE FINAL -->
+
+    <div id="final" class="final">
+
+        <h2>
+            🚨 HAS CAÍDO 🚨
+        </h2>
+
+    </div>
+
+
+</div>
+
+
+
+<!-- PANEL LATERAL -->
+
+<div class="card">
+
+    <h2>
+        Datos del evento
+    </h2>
+
+
+    <p>
+        <strong>Fecha:</strong><br>
+        21 y 22 de noviembre de 2026
+    </p>
+
+
+    <p>
+        <strong>Sede:</strong><br>
+        Ciudad de Guatemala
+    </p>
+
+
+    <p>
+        <strong>Estado de inscripción:</strong>
+    </p>
+
+
+    <span class="estado">
+        INSCRIPCIÓN ACTIVA
+    </span>
+
+
+    <p style="margin-top:25px;">
+        <strong>Categorías participantes</strong>
+    </p>
+
+
+    <p>
+        🤖 Robótica Educativa<br>
+        ⚙️ Robot Futbol<br>
+        🏎️ Robot Carrera<br>
+        🥊 Robot Combate
+    </p>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+<!-- PIE DE PÁGINA -->
+
+<footer>
+
+    <p>
+        © 2026 RNRT Guatemala — Red Nacional de Robótica y Tecnología
+    </p>
+
+    <p>
+        Plataforma de registro y gestión de participantes
+    </p>
+
+</footer>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+function confirmar() {
+
+    let errores = document.getElementById("errores");
+    let final = document.getElementById("final");
+
+    /* Mostrar primer error */
+
+    errores.style.display = "block";
+
+
+    /* Segundo error */
+
+    setTimeout(function() {
+
+        errores.innerHTML += `
+        
+        <div class="error">
+            ⚠ Error de sesión — No fue posible validar el registro.
+        </div>
+
+        `;
+
+    }, 1200);
+
+
+    /* Tercer error */
+
+    setTimeout(function() {
+
+        errores.innerHTML += `
+        
+        <div class="error">
+            ⚠ Error de autenticación — Se requiere una nueva verificación.
+        </div>
+
+        `;
+
+    }, 2400);
+
+
+    /* Cuarto error */
+
+    setTimeout(function() {
+
+        errores.innerHTML += `
+        
+        <div class="error">
+            ⚠ Sistema temporalmente bloqueado.
+        </div>
+
+        `;
+
+    }, 3600);
+
+
+    /* Mensaje final */
+
+    setTimeout(function() {
+
+        final.style.display = "block";
+
+        final.scrollIntoView({
+            behavior: "smooth"
+        });
+
+    }, 5000);
+
+}
+
+</script>
+
+
+</body>
+</html>
